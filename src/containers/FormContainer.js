@@ -18,16 +18,6 @@ class FormContainer extends Component {
       currentPetCount: 0,
       description: ''
     };
-    // this.handleFormSubmit = this.handleFormSubmit.bind(this);
-    // this.handleClearForm = this.handleClearForm.bind(this);
-    // this.handleFullNameChange = this.handleFullNameChange.bind(this);
-    // this.handleCurrentPetCountChange = this.handleCurrentPetCountChange.bind(
-    //   this
-    // );
-    // this.handleAgeRangeSelect = this.handleAgeRangeSelect.bind(this);
-    // this.handlePetSelection = this.handlePetSelection.bind(this);
-    // this.handleSiblingsSelection = this.handleSiblingsSelection.bind(this);
-    // this.handleDescriptionChange = this.handleDescriptionChange.bind(this);
   }
   componentDidMount() {
     fetch('./fake_db.json')
@@ -81,10 +71,6 @@ class FormContainer extends Component {
     );
   };
   handleDescriptionChange = e => {
-    // const textArray = e.target.value.split('').filter(x => x !== 'e');
-    // console.log('string split into array of letters',textArray);
-    // const filteredText = textArray.join('');
-    // this.setState({ description: filteredText }, () => console.log('description', this.state.description));
     this.setState({ description: e.target.value }, () =>
       console.log('description', this.state.description)
     );
