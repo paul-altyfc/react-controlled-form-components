@@ -1,6 +1,6 @@
 import React from 'react';
 
-const CheckboxOrRadioGroup = props => (
+const CheckboxGroup = props => (
   <div>
     <label className="form-label">{props.title}</label>
     <div className="checkbox-group">
@@ -23,4 +23,4 @@ const CheckboxOrRadioGroup = props => (
   </div>
 );
 
-export default CheckboxOrRadioGroup;
+export default CheckboxGroup;
